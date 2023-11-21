@@ -1,0 +1,500 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/*the login and signup pages */
+.login-section, .signup-section {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.user-type {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-type label {
+    display: block;
+}
+
+.login-form, .signup-form {
+    text-align: center;
+}
+
+.login-form input, .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button, .signup-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-form button:hover, .signup-form button:hover {
+    background-color: #555;
+}
+
+/* the client/gym member page */
+.member-options {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.option-container {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.option-container:hover {
+    transform: scale(1.05);
+}
+
+.option-box {
+    padding: 20px;
+}
+
+.option-box h3 {
+    margin: 0;
+}
+
+.option-box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.option-box a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.option-box a:hover {
+    color: #f44336; /* Red color on hover */
+}
+
+.signout-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.signout-container {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signout-box {
+    text-decoration: none;
+    color: #333;
+}
+
+.signout-box h3 {
+    margin: 0;
+}
+
+.signout-box:hover {
+    background-color: #f44336; /* Red color on hover */
+    color: #d30909;
+}
+
+/* workout plan page/
+/*/
+
+
+.create-workout-section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-workout-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    appearance: none; 
+    padding-right: 30px; 
+    background-image: url("dropdown-arrow.png"); 
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+/* Admin Page Styling */
+.admin-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+}
+
+.option-container {
+    background-color: #555;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.option-container:hover {
+    transform: translateY(-5px); /* Lift up a bit on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* A slightly deeper shadow on hover */
+}
+
+.option-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.option-button:hover {
+    background-color: #555;
+}
+
+.option-button img {
+    margin-right: 10px; /* Space between image and text */
+    height: 150px; /* Slightly increased image height for better visibility */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Sign Out Section */
+.signout-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.signout-box {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.signout-box:hover {
+    background-color: #d30909;
+    transform: translateY(-3px); /* Lift up a bit on hover */
+}
+
+
+
+
+
+
+
+
+/* Add/Remove Client Page Styling */
+
+.add-client, .search-clients {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.clients-list {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clients-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.clients-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Add/Remove Gym Page Styling */
+
+.add-gym, .search-gyms {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gyms-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.gyms-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gyms-list button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gyms-list button:hover {
+    background-color: #d30909;
+}
+
+
+
+
+
+
+
+
+/* add/remove trainers*/ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.add-trainer, .search-trainer, .trainers-list {
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+/*  match clients with  trainers*/
+.match-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.match-form, .matched-list {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.matched-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.matched-list ul li {
+    margin-bottom: 10px;
+}

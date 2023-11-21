@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym Bud (FGB)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to Fitness Gym Bud (FGB)</h1>
+    <p>Live free and healthy</p>
+</header>
+
+<section class="login-section">
+    <h2>Login or Sign Up</h2>
+    <div class="user-type">
+        <label for="user-type">Select User Type:</label>
+        <select id="user-type">
+            <option value="gym-admin">Gym Admin</option>
+            <option value="personal-trainer">Personal Trainer</option>
+            <option value="gym-member">Gym Member/Client</option>
+        </select>
+    </div>
+    <div class="login-form">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="login-button">Login</button>
+    </div>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Fitness Gym Bud (FGB)</p>
+</footer>
+
+<script>
+    document.getElementById('login-button').addEventListener('click', function (event) {
+        event.preventDefault();
+        var userType = document.getElementById('user-type').value;
+
+
+        switch (userType) {
+            case 'gym-admin':
+                window.location.href = "gymAdmin.html";
+                break;
+            case 'personal-trainer':
+                window.location.href = "Trainer.html";
+                break;
+            case 'gym-member':
+                window.location.href = "gymMember.html";
+                break;
+            default:
+                console.error('Invalid user type');
+            // Handle error
+        }
+    });
+</script>
+</body>
+</html>

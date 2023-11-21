@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Remove Clients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>Add/Remove Clients</h1>
+</header>
+
+<!-- Add Client Section -->
+<section class="add-client">
+    <h2>Add Client</h2>
+    <form id="addClientForm">
+        <label for="clientNumber">Client Number:</label>
+        <input type="text" id="clientNumber" required>
+
+        <label for="clientFirstName">First Name:</label>
+        <input type="text" id="clientFirstName" required>
+
+        <label for="clientLastName">Last Name:</label>
+        <input type="text" id="clientLastName" required>
+
+        <button type="submit">Add Client</button>
+    </form>
+</section>
+
+<!-- Search Bar for Existing Clients -->
+<section class="search-clients">
+    <h2>Search Clients</h2>
+    <input type="text" id="searchInput" onkeyup="filterClients()" placeholder="Search by name or number...">
+</section>
+
+<!-- List of Existing Clients -->
+<section class="clients-list">
+    <h2>Existing Clients</h2>
+    <ul id="clientList">
+        <!-- Sample Clients -->
+        <li>
+            001 - Rohan waheed
+            <button onclick="removeClient(this)">Remove</button>
+        </li>
+        <li>
+            002 - Jacob Crews
+            <button onclick="removeClient(this)">Remove</button>
+        </li>
+        <li>
+            003 - Bilal Zahid
+            <button onclick="removeClient(this)">Remove</button>
+        </li>
+        <li>004 - Mike Williams <button onclick="removeClient(this)">Remove</button></li>
+        <li>005 - Sarah Johnson <button onclick="removeClient(this)">Remove</button></li>
+        <li>006 - James Lee <button onclick="removeClient(this)">Remove</button></li>
+        <li>007 - Megan Taylor <button onclick="removeClient(this)">Remove</button></li>
+        <!-- End of Sample Clients -->
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2023 Fitness Gym Bud (FGB)</p>
+</footer>
+</body>
+
+</html>

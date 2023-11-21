@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Remove Trainers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="add-trainer">
+        <h2>Add New Trainer</h2>
+        <form>
+            <input type="text" id="trainer-first-name" placeholder="First Name" required>
+            <input type="text" id="trainer-last-name" placeholder="Last Name" required>
+            <input type="text" id="trainer-specialization" placeholder="Specialization (e.g. Cardio, Strength)" required>
+            <button type="submit">Add Trainer</button>
+        </form>
+    </section>
+
+    <section class="search-trainer">
+        <h2>Search Trainer</h2>
+        <input type="text" id="trainer-search" placeholder="Search by name or specialization">
+        <button onclick="searchTrainers()">Search</button>
+    </section>
+
+    <section class="trainers-list">
+        <h2>List of Trainers</h2>
+        <ul>
+            <!-- Sample trainers -->
+            <li data-name="drake" data-specialization="Cardio">
+                Drake khan, Cardio 
+                <button onclick="removeTrainer(this)">Remove</button>
+            </li>
+            <li data-name="rohan" data-specialization="Strength">
+                Rohan Waheed, Strength 
+                <button onclick="removeTrainer(this)">Remove</button>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 Fitness Gym Bud (FGB)</p>
+    </footer>
+</body>
+
+</html>

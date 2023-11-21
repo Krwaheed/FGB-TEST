@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Clients with Trainers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>Match Clients with Trainers</h1>
+</header>
+
+<section class="match-section">
+    <div class="match-form">
+        <h2>Select Client and Trainer</h2>
+        <form id="match-form">
+            <div class="input-group">
+                <label for="client-select">Client:</label>
+                <select id="client-select">
+                    <!-- Example clients (dynamic in real-world) -->
+                    <option value="Rohan waheed">Rohan waheed</option>
+                    <option value="numon waheed">numon waheed</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="trainer-select">Trainer:</label>
+                <select id="trainer-select">
+                    <!-- Example trainers (dynamic in real-world) -->
+                    <option value="Trainer Mike">Trainer Mike - Cardio Specialist</option>
+                    <option value="Trainer Lisa">Trainer Lisa - Yoga Instructor</option>
+                </select>
+            </div>
+
+            <button type="submit">Match</button>
+        </form>
+    </div>
+
+    <div class="matched-list">
+        <h2>Current Matches</h2>
+        <ul id="matches-ul">
+            <!-- Displayed matched pairs will appear here -->
+        </ul>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2023 Fitness Gym Bud (FGB)</p>
+</footer>
+
+</body>
+
+</html>

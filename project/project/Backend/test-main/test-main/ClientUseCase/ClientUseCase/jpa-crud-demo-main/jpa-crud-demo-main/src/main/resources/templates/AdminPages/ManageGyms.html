@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FGB - Add/Remove Gyms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Manage Gyms</h1>
+</header>
+
+<!-- Add Gym Section -->
+<section class="add-gym">
+    <h2>Add Gym</h2>
+    <form>
+        <label for="gym-name">Gym Name:</label>
+        <input type="text" id="gym-name">
+
+        <label for="gym-address">Address:</label>
+        <input type="text" id="gym-address">
+
+        <label for="gym-phone">Phone Number:</label>
+        <input type="text" id="gym-phone">
+
+        <label for="gym-facilities">Facilities (comma-separated):</label>
+        <input type="text" id="gym-facilities">
+
+        <button type="submit">Add Gym</button>
+    </form>
+</section>
+
+<!-- Search and Remove Gym Section -->
+<section class="search-gyms">
+    <h2>Search Gyms</h2>
+    <input type="text" id="search-bar" placeholder="Search gyms...">
+
+    <div class="gyms-list">
+        <h3>Gyms List</h3>
+        <ul>
+            <!-- Sample gyms -->
+            <li>
+                Flex Fitness, 123 Fit St, (123) 456-7890
+                <button onclick="removeGym(this)">Remove</button>
+            </li>
+            <li>
+                Powerhouse Gym, 456 Power Rd, (987) 654-3210
+                <button onclick="removeGym(this)">Remove</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Fitness Gym Bud (FGB)</p>
+</footer>
+</body>
+</html>
